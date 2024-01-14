@@ -1,42 +1,3 @@
-/* Template: Sync - Free Mobile App Landing Page HTML Template
-   Author: Inovatik
-   Created: Dec 2019
-   Description: Master CSS file
-*/
-
-/*****************************************
-Table Of Contents:
-
-01. General Styles
-02. Preloader
-03. Navigation
-04. Header
-05. Small Features
-06. Description 1
-07. Description 1 Details Lightbox
-08. Description 2
-09. Features
-10. Screenshots
-11. Testimonials
-12. Statistics
-13. Download
-14. Footer
-15. Copyright
-16. Back To Top Button
-17. Extra Pages
-18. Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Backgrounds - light gray #f7fafd
-- Backgrounds - gray #e8eff6
-- Buttons - red #ff556e
-- Headings text, navbar links - black #333
-- Body text - dark gray #333
-******************************************/
-
-
 /******************************/
 /*     01. General Styles     */
 /******************************/
@@ -909,6 +870,9 @@ input[type='checkbox'] {
 	margin-left: 0.5rem;
 }
 
+.media-body {
+  display: block;
+}
 
 /**********************************************/
 /*     07. Description 1 Details Lightbox     */
@@ -1030,12 +994,11 @@ input[type='checkbox'] {
 }
 
 .tabs .tabs-container {
-	margin-top: 1rem;
 	margin-bottom: 2rem;
 }
 
 .tabs .nav-tabs {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	border: none;
 }
 
@@ -1080,7 +1043,7 @@ input[type='checkbox'] {
 
 .tabs .list-unstyled .fas,
 .tabs .list-unstyled .far {
-	color: rgba(234,87,83,1);
+	color: rgba(234,87,83,0.8);
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
@@ -1379,10 +1342,6 @@ input[type='checkbox'] {
 	background-color: #f7fafd;
 }
 
-.footer .footer-col {
-	margin-left: 2rem;
-}
-
 .footer p,
 .footer h5,
 .footer ul,
@@ -1567,8 +1526,8 @@ a:hover.back-to-top {
 /*****************************/
 /*     18. Media Queries     */
 /*****************************/	
-/* Min-width 768px */
-@media (min-width: 768px) {
+/* Min-width 540px */
+@media (min-width: 540px) {
 	
 	/* Header */
 	.header .image-container {
@@ -1605,6 +1564,13 @@ a:hover.back-to-top {
 	}
 	/* end of small features */
 
+	.media-body {
+	display: flex;
+	}
+
+	.media-version-tag {
+		margin-left: 1rem;
+	}
 
 	/* Description 2 */
 	.tabs .nav-item {
@@ -1634,7 +1600,7 @@ a:hover.back-to-top {
 
 	.cards-2 .card {
 		display: inline-block;
-		width: 33%;
+		width: 44%;
 		max-width: 100%;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;
@@ -1656,7 +1622,7 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 }
-/* end of min-width 768px */
+/* end of min-width 540px */
 
 
 /* Min-width 992px */
@@ -1788,7 +1754,7 @@ a:hover.back-to-top {
 	}
 
 	.tabs .tabs-container {
-		margin-top: 2rem;
+		margin-top: 1rem;
 		margin-bottom: 0;
 	}
 	/* end of description 2 */
@@ -2004,7 +1970,7 @@ a:hover.back-to-top {
 	}
 
 	.tabs .tabs-container {
-		margin-top: 2rem;
+		margin-top: 1rem;
 	}
 	/* end of description 2 */
 
