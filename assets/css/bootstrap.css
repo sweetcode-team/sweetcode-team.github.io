@@ -5310,13 +5310,22 @@ a.badge-dark:focus, a.badge-dark.focus {
 .media {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.media-body {
-  -ms-flex: 1;
-  flex: 1;
+.media-version-tag {
+  display: inline-flex;
+  margin-left: 0.5rem;
+}
+
+.media-version-tag i {
+  margin-right: 0.5rem;
+}
+
+.media-version-tag p{
+  font-weight: 600;
+  margin: 0;
+  color: rgba(234, 87, 83, 1);
 }
 
 .list-group {
